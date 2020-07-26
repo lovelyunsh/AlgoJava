@@ -13,6 +13,9 @@ public class basicform {
 			for(int tc = 1; tc <= T; tc++)
 			{
 				//solving
+				
+				System.out.printf("#%d ", tc );
+				System.out.println();
 			}
 		}
 	
