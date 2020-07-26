@@ -10,7 +10,7 @@ public class basicform {
 			int T;
 			T=sc.nextInt();
 		
-			for(int test_case = 1; test_case <= T; test_case++)
+			for(int tc = 1; tc <= T; tc++)
 			{
 				//solving
 			}
