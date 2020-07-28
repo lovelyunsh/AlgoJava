@@ -14,8 +14,7 @@ public class basicform {
 			{
 				//solving
 				
-				System.out.printf("#%d ", tc );
-				System.out.println();
+				System.out.printf("#%d \n", tc );
 			}
 		}
 	

@@ -1,4 +1,5 @@
 package D3;
+
 import java.util.Scanner;
 
 public class P1289원재의메모리복구 {
@@ -7,7 +8,7 @@ public class P1289원재의메모리복구 {
 		Scanner sc = new Scanner(System.in);
 		int T;
 		T = sc.nextInt();
-		for (int test_case = 1; test_case <= T; test_case++) {			
+		for (int test_case = 1; test_case <= T; test_case++) {
 			int count = 0;
 			char flag = '1';
 			String num = sc.next();
@@ -15,11 +16,9 @@ public class P1289원재의메모리복구 {
 				if (ch == flag) {
 					count++;
 					flag = flag == '0' ? '1' : '0';
-					
 				}
 			}
-			System.out.printf("#%d %d\n",test_case,count);
-
+			System.out.printf("#%d %d\n", test_case, count);
 		}
 
 	}
