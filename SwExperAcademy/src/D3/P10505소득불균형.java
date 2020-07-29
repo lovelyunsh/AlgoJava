@@ -1,6 +1,7 @@
+package D3;
 import java.util.Scanner;
 
-public class 소득불균형 {
+public class P10505소득불균형 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
