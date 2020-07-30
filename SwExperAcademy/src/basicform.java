@@ -13,6 +13,10 @@ public class basicform {
 			for(int tc = 1; tc <= T; tc++)
 			{
 				//solving
+				String ab = "";
+				char a = 65;
+				ab = ab+ a ;
+				System.out.println(ab);
 				
 				System.out.printf("#%d \n", tc );
 			}
