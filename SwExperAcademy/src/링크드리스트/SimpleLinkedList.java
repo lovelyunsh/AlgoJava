@@ -1,10 +1,10 @@
 package 링크드리스트;
 
 public class SimpleLinkedList {
-	private Node head;
+	private node head;
 
 	public void addFirstNode(String data) {
-		Node newNode = new Node(data, head);
+		node newNode = new node(data, head);
 		head = newNode;
 	}
 	public String pop() {
@@ -14,7 +14,7 @@ public class SimpleLinkedList {
 	}
 	
 	public void printList() {
-		for (Node currNode = head; currNode != null; currNode = currNode.link) {
+		for (node currNode = head; currNode != null; currNode = currNode.link) {
 			System.out.print(currNode.data);
 		}
 		System.out.println();
