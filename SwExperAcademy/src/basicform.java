@@ -6,16 +6,15 @@ public class basicform {
 
 	public static void main(String args[]) throws Exception {
 
-		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st;
+		st = new StringTokenizer(br.readLine());
 		int T;
-		T = Integer.parseInt(bf.readLine());
+		T = Integer.parseInt(st.nextToken());
 		
 
 		for (int tc = 1; tc <= T; tc++) {
-			st = new StringTokenizer(bf.readLine(), " ");
 			// solving
-
 			System.out.printf("#%d \n", tc);
 		}
 	}
