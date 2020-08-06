@@ -23,8 +23,7 @@ public class P3289서로소집합 {
 	static int find(int x) {
 		if (x == parent[x])
 			return x;
-		parent[x] = find(parent[x]);
-		return find(parent[x]);
+		return parent[x] = find(parent[x]);
 	}
 
 	public static void main(String args[]) throws Exception {
