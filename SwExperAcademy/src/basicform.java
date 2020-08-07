@@ -1,7 +1,8 @@
 import java.util.StringTokenizer;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
+//static int dr[] = {1,0,-1,0};
+//static int dc[] = {0,-1,0,1};
 public class basicform {
 
 	public static void main(String args[]) throws Exception {
