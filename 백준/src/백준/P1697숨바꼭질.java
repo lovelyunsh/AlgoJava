@@ -20,39 +20,41 @@ public class P1697숨바꼭질 {
 	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		boolean asdf [] = new boolean[100001];
+		boolean check [] = new boolean[1000000];
 		StringTokenizer st;
 
 		st = new StringTokenizer(br.readLine());
 
 		int N = Integer.parseInt(st.nextToken());
 		int K = Integer.parseInt(st.nextToken());
-		Queue<find> abc = new LinkedList<find>();
-		abc.add(new find(N, 0));
+		Queue<find> que = new LinkedList<find>();
+		que.add(new find(N, 0));
 		int result = 0;
-		while(!abc.isEmpty()) {
-			find a = abc.poll();
+		while(!que.isEmpty()) {
+			find a = que.poll();
+			check[N] = true;
 			if(a.now == K) {
 				result = a.cnt;
 				break;
 			}
+			
 			if(a.now + 1 > K) {
-				abc.offer(new find(a.now-1, a.cnt+1));
+				que.offer(new find(a.now-1, a.cnt+1));
+			}
+			else if(a.now == 0) {
+				que.offer(new find(a.now+1, a.cnt+1));
 			}
 			else {
-				abc.offer(new find(a.now*2, a.cnt+1));
-				abc.offer(new find(a.now+1, a.cnt+1));
-				if(!asdf[a.now-1]) {
-					abc.offer(new find(a.now-1, a.cnt+1));
-					asdf[a.now-1] = true;
+				que.offer(new find(a.now*2, a.cnt+1));
+				que.offer(new find(a.now+1, a.cnt+1));
+				if(!check[a.now-1]) {
+					que.offer(new find(a.now-1, a.cnt+1));
 				}
-				if(!asdf[a.now+1]) {
-					abc.offer(new find(a.now-1, a.cnt+1));
-					asdf[a.now+1] = true;
+				if(a.now+1 < 1000000 &&!check[a.now+1]) {
+					que.offer(new find(a.now-1, a.cnt+1));
 				}
-				if(a.now*2 < 100000 && !asdf[a.now*2]) {
-					abc.offer(new find(a.now-1, a.cnt+1));
-					asdf[a.now*2] = true;
+				if(a.now*2 < 1000000 && !check[a.now*2]) {
+					que.offer(new find(a.now-1, a.cnt+1));
 				}
 			}
 		}
