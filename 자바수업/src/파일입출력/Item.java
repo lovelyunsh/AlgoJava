@@ -1,6 +1,5 @@
 package 파일입출력;
 
-import java.sql.Time;
 
 public class Item{
 	private String title;
