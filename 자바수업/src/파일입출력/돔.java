@@ -14,7 +14,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-public class 연습 {
+public class 돔 {
 	public static void main(String[] args) {
 		ArrayList<Item> itemlist = new ArrayList<Item>();
 		try {
@@ -24,14 +24,12 @@ public class 연습 {
 			document.normalize();
 
 			Element rss = document.getDocumentElement();
-			NodeList channel1 = rss.getChildNodes();
-			Node channel = channel1.item(1);
+			Node channel = rss.getChildNodes().item(1);
 
 			NodeList nodelist = channel.getChildNodes();
 			for (int i = 0; i < nodelist.getLength(); i++) {
 				Node node = nodelist.item(i);
-				if (node.getNodeType() != Node.ELEMENT_NODE 
-						|| ((Element) node).getNodeName() != "item")
+				if (node.getNodeType() != Node.ELEMENT_NODE || ((Element) node).getNodeName() != "item")
 					continue;
 				NodeList itemchild = node.getChildNodes();
 				Item item = new Item();
