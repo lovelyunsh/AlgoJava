@@ -1,5 +1,10 @@
 package lab.ssafy.corona.app;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -49,6 +54,26 @@ public class MainTest {
 		}
 
 		cdc.printPatientList();
+		
+		// File Write
+		String filePath = "c:"+File.separator+"SSAFY";
+		String fileName = "CoronaPatientList.csv";
+		
+		try (				
+			BufferedWriter writer = 
+			new BufferedWriter(
+				new OutputStreamWriter(
+					new FileOutputStream(filePath+File.separator+fileName), "MS949"));
+		){
+			for( Patient p : patientList ) {
+				writer.write(p.getName() + "^" + p.getAge() + "^" + p.getPhone());
+				writer.newLine();
+			}
+			writer.flush();
+			
+		}catch(IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

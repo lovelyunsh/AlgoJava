@@ -5,17 +5,10 @@ import java.util.Iterator;
 
 public class qwe {
 	public static void main(String[] args) {
-		ArrayList<String> list = new ArrayList<String>();
-		
-		
-		list.add("사과");
-		list.add("하아");
-		list.add("호오");
-		
-		
-		Iterator<String> iter =list.iterator();
-		int cnt = 0;
-		
+		int a = 1;
+		int b = 2;
+		a = a^b^(b=a);
+		System.out.println(a+" "+ b);
 		
 		
 		
