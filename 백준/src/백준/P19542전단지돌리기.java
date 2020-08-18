@@ -15,13 +15,13 @@ public class P19542전단지돌리기 {
 	static int cnt, D, parents[];
 
 	static int find(int x) {
-		if (parents[x] == x)
+		if (parents[x] == x) //루프 노드를 만나면 지금까지 세어논 길이 return
 			return cnt;
-		if (visited[x]) {
+		if (visited[x]) { // 방문 했던 노드를 만나면 지금까지 세어논 길이 return 
 			return cnt - 1;
 		}
 		cnt++;
-		if (D < cnt)
+		if (D < cnt) //힘이 거리보다 크면 방문을 하지 않으니 거리가 힘보다 클때만 방문처리 
 			visited[x] = true;
 		return find(parents[x]);
 
@@ -52,17 +52,17 @@ public class P19542전단지돌리기 {
 			parents[i] = i;
 		Queue<Integer> que = new LinkedList<Integer>();
 		que.add(S);
-		while (!que.isEmpty()) {
+		while (!que.isEmpty()) { //bfs로 각 노드들의 부모 자식연결 (트리 생성)
 			int now = que.poll();
 			boolean isleaf = true;
 			for (int i = 0; i < list[now].size(); i++) {
 				if (parents[now] != list[now].get(i)) {
-					isleaf = false;
+					isleaf = false;	
 					que.add(list[now].get(i));
 					parents[list[now].get(i)] = now;
 				}
 			}
-			if (isleaf)
+			if (isleaf) //자식이 하나도 없다면 리프노드
 				leaflist.add(now);
 		}
 		int result = 0;
@@ -70,7 +70,7 @@ public class P19542전단지돌리기 {
 			cnt = 0;
 			find(leaf);
 			if (cnt - D > 0)
-				result += (cnt - D) * 2;
+				result += (cnt - D) * 2; //세어논 거리에서 힘만큼 빼고 왕복이니 2배
 		}
 		System.out.println(result);
 	}

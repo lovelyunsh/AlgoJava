@@ -8,43 +8,53 @@ import java.util.Arrays;
 
 public class P1941소문난칠공주DFS {
 	static char map[][]; 
+	static boolean visit[][];
 	static int result;
-	static boolean[][] visit, end;
-	static Point sel[];
-	static int dr[] = {1,0,-1,0};
-	static int dc[] = {0,-1,0,1};
-	static void dfs(Point p,int selidx) {
+	static boolean[][]  end;
+	static int dr[] = {1,0};
+	static int dc[] = {0,1};
+	static void dfs(Point p,int selidx , Point sel []) {
 		if(selidx == 7) {
 			int Y = 0;
 			for(Point nn : sel) {
 				if(map[nn.x][nn.y] == 'Y')
 					Y++;
 			}
-			if(Y <= 3)
-				result++;
+			if(Y > 3)
+				return;
+			System.out.println(Arrays.toString(sel));
+			result++;
 			return;
-		}
-		if(sel[0].x == 3 && sel[0].y == 4) {
-			System.out.println("hello");
-		}
-			
-		
+		}	
 		for(Point n : sel) {
-			for(int i = 0 ; i < 4 ; i++) {
+			if(n == null)
+				break;
+			boolean flag = false; // 역 ㄱ자 모양 중복 제거용
+			
+			for(Point a : sel) {
+				if(a == null)
+					break;
+				if(n.x-1 == a.x && n.y +1 == a.y) {
+					flag = true;
+					break;
+				}
+			}
+			for(int i = 0 ; i < 2 ; i++) {
 				int row = n.x+dr[i];
 				int col = n.y+dc[i];
 				
 				if(row < 0 || col <0 || row>= 5 || col >= 5)
 					continue;
-				if(visit[row][col])
-					continue;
 				if(end[row][col])
+					continue;
+				if(visit[row][col])
 					continue;
 				sel[selidx] = new Point(row,col);
 				visit[row][col] = true;
-				dfs(new Point(row,col),selidx+1);
+				dfs(new Point(row,col),selidx+1, sel);
 				visit[row][col] = false;
-				
+				if(flag) //역 ㄱ자 모양이면 밑에만 검사 오른쪽 검사 ㄴㄴ
+					break;
 			}
 			
 		}
@@ -66,13 +76,10 @@ public class P1941소문난칠공주DFS {
 
 		for (int i = 0; i < 5; i++) {
 			for (int j = 0; j < 5; j++) {
-				System.out.println("123");
 				visit = new boolean[5][5];
-				sel = new Point[7];
+				Point sel [] = new Point[7];
 				sel[0] = new Point(i,j);
-				visit[i][j] = true;
-				System.out.println(Arrays.toString(sel));
-				dfs(new Point(i, j),1);
+				dfs(new Point(i, j),1,sel);
 				end[i][j] = true;
 			}
 		}
