@@ -9,7 +9,6 @@ import java.io.InputStreamReader;
 //for(int i = 0 ; i < 30 ; i++) {  //맵보기
 //System.out.println();
 //}
-//System.out.println(row+" "+col);
 //for(int i = 0 ; i < 5 ; i++) {
 //for(int j = 0 ; j < 5 ; j++) {
 //	System.out.print(visit[i][j] +" ");

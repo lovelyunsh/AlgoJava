@@ -15,136 +15,78 @@ public class P17142연구소3 {
 	static ArrayList<Point> virus = new ArrayList<Point>();
 	static int N, V, zeroCnt, map[][];
 	static int min = 123456789;
-	static int dr[] = { 1, 0, -1, 0 };
-	static int dc[] = { 0, -1, 0, 1 };
-
+	static int dr[] = {1,0,-1,0};
+	static int dc[] = {0,-1,0,1};
 	static void comb(int[] sel, int sidx, int idx) {
-
-		if (sidx == V) {
+		if(sidx == V) {
 			visit = new boolean[N][N];
 			BFS(sel);
 			return;
 		}
-		if (idx == virus.size())
+		if(idx == virus.size())
 			return;
-
+		
 		sel[sidx] = idx;
-		comb(sel, sidx + 1, idx + 1);
-		comb(sel, sidx, idx + 1);
-
+		comb(sel,sidx+1,idx+1);
+		comb(sel,sidx,idx+1);
+		
 	}
-
+	
 	static void BFS(int sel[]) {
 		Queue<Point> que = new LinkedList<Point>();
-		for (int i : sel) {
+		for(int i : sel) {
 			Point v = virus.get(i);
 			que.offer(v);
 			visit[v.x][v.y] = true;
 		}
-
-
-
-		que.offer(new Point(-1, -1));
+		que.offer(new Point(-1,-1));
 		int cnt = 0;
 		int time = 0;
-		for (int i = 0; i < 30; i++) { // 맵보기
-			System.out.println();
-		}
-		System.out.println(time +"일");
-		for (int i = 0; i < N; i++) {
-			for (int j = 0; j < N; j++) {
-				if(visit[i][j]) {
-					System.out.print("O"+" ");
-					continue;
-				}
-				if(map[i][j] == 1) {
-					System.out.print(1+" ");
-					continue;
-				}
-				if(map[i][j] == 2) {
-					System.out.print(2+" ");
-					continue;
-				}
-				
-					System.out.print("X"+" ");
-			}
-			System.out.println();
-		}
-		while (true) {
+		while(true) {
 			Point p = que.poll();
-			if (p.x == -1) {
-				try {
-					Thread.sleep(300);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				for (int i = 0; i < 30; i++) { // 맵보기
-					System.out.println();
-				}
-				System.out.println(time+1 +"일");
-				for (int i = 0; i < N; i++) {
-					for (int j = 0; j < N; j++) {
-						if(visit[i][j]) {
-							System.out.print("O"+" ");
-							continue;
-						}
-						if(map[i][j] == 1) {
-							System.out.print(1+" ");
-							continue;
-						}
-						if(map[i][j] == 2) {
-							System.out.print(2+" ");
-							continue;
-						}
-						
-							System.out.print("X"+" ");
-					}
-					System.out.println();
-				}
-				try {
-					Thread.sleep(300);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				
-				if (que.isEmpty())
+			if(p.x == -1) {
+				if(que.isEmpty())
 					break;
 				time++;
-				que.offer(new Point(-1, -1));
+				que.offer(new Point(-1,-1));
 				continue;
 			}
-			if (map[p.x][p.y] == 0) {
+			if(map[p.x][p.y] == 0) { 
 				cnt++;
 			}
-			if (cnt == zeroCnt) {
+			if(cnt == zeroCnt) {
 				min = Math.min(min, time);
 				break;
 			}
-			for (int i = 0; i < 4; i++) {
-				int row = p.x + dr[i];
-				int col = p.y + dc[i];
-				if (row < 0 || col < 0 || row >= N || col >= N)
+			for(int i = 0 ; i < 4 ; i++) {
+				int row = p.x+dr[i];
+				int col = p.y+dc[i];
+				if(row<0 || col<0 || row>=N || col >= N)
 					continue;
-				if (visit[row][col])
+				if(visit[row][col])
 					continue;
-				if (map[row][col] == 1)
+				if(map[row][col] == 1)
 					continue;
-
+				
 				visit[row][col] = true;
-				que.offer(new Point(row, col));
+				que.offer(new Point(row,col));
 			}
-
+			
+				
+			
+			
 		}
-
-
+		
+		
+		
 	}
-
+	
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
 		V = Integer.parseInt(st.nextToken());
-		map = new int[N][N];
+		map = new int [N][N];
 		visit = new boolean[N][N];
 		zeroCnt = 0;
 		for (int i = 0; i < N; i++) {
@@ -152,18 +94,18 @@ public class P17142연구소3 {
 			for (int j = 0; j < N; j++) {
 				map[i][j] = Integer.parseInt(st.nextToken());
 				if (map[i][j] == 0)
-					zeroCnt++; // 0의 갯수 세어 놓기
+					zeroCnt++; //0의 갯수 세어 놓기
 				if (map[i][j] == 2)
-					virus.add(new Point(i, j)); // 바이러스의 위치
+					virus.add(new Point(i, j)); //바이러스의 위치
 			}
 		}
-
+		
 		comb(new int[V], 0, 0);
-		if (min == 123456789)
+		if(min == 123456789)
 			min = -1;
-
+		
 		System.out.println(min);
-
+		
 	}
 
 }
