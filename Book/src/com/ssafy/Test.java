@@ -9,7 +9,7 @@ public class Test {
 	public static void main(String[] args) throws IOException {
 		BookDAO dao = BookDAO.getinstance();
 		while (true) {
-			System.out.println("----------------------------------------------");
+			System.out.println("---------------------------------------------");
 			System.out.println("1.insert 2.update 3.delete 4.find 5.list 6.count 0.end");
 			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 			int choice = -1;
