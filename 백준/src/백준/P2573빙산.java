@@ -16,12 +16,10 @@ public class P2573빙산 {
 	static int dc[] = { 0, -1, 0, 1 };
 
 	/**
-	 * 1. 총 얼음의 갯수를 세어둔다.
-	 * 2. 1년 뒤의 변화를 위해 bfs로 어느 한 얼음부터 얼음 하나하나 방문
-	 * 3. 몇번 방문한지 세고 얼음 갯수랑 비교
-	 * 4. 총 얼음갯수와 방문수가 다르면 다른위치에도 얼음이 있으니 분리 되어진것이므로 year출력
+	 * 1. 총 얼음의 갯수를 세어둔다. 2. 1년 뒤의 변화를 위해 bfs로 어느 한 얼음부터 얼음 하나하나 방문 3. 몇번 방문한지 세고 얼음
+	 * 갯수랑 비교 4. 총 얼음갯수와 방문수가 다르면 다른위치에도 얼음이 있으니 분리 되어진것이므로 year출력
 	 */
-	public static int oneyear(int map[][]) { //다음년도꺼 빙산 만들기와 올해 빙산 몇개인지 검사 동시에
+	public static int oneyear(int map[][]) { // 다음년도꺼 빙산 만들기와 올해 빙산 몇개인지 검사 동시에
 		int[][] c_map = map.clone();
 		visit = new boolean[N][M];
 		int nowice = ice; // 올해 검사용
@@ -31,6 +29,7 @@ public class P2573빙산 {
 		visit[maxp.x][maxp.y] = true;
 		max = 0;
 		while (!que.isEmpty()) {
+
 			Point now = que.poll(); // 검사할 점
 			int zero = 0; // 현재 점 주변 0
 			for (int i = 0; i < 4; i++) {
@@ -48,9 +47,9 @@ public class P2573빙산 {
 				}
 			}
 			c_map[now.x][now.y] -= zero;
-			if(max < c_map[now.x][now.y]) {
+			if (max < c_map[now.x][now.y]) {
 				max = c_map[now.x][now.y];
-				maxp.setLocation(now.x,now.y);
+				maxp.setLocation(now.x, now.y);
 			}
 			if (c_map[now.x][now.y] <= 0) {
 				c_map[now.x][now.y] = 0;
@@ -59,12 +58,12 @@ public class P2573빙산 {
 		}
 		if (nowice != cnt)
 			return year;
-		
+
 		year++;
-		if(ice == 0)
+		if (ice == 0)
 			return 0;
 		map = c_map;
-		return -1; 
+		return -1;
 	}
 
 	public static void main(String[] args) throws IOException {
@@ -89,7 +88,7 @@ public class P2573빙산 {
 		int result = 0;
 		while (true) {
 			result = oneyear(map);
-			if(result != -1)
+			if (result != -1)
 				break;
 		}
 		System.out.println(result);

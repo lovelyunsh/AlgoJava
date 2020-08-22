@@ -25,7 +25,6 @@ public class P17142연구소3 {
 		}
 		if(idx == virus.size())
 			return;
-		
 		sel[sidx] = idx;
 		comb(sel,sidx+1,idx+1);
 		comb(sel,sidx,idx+1);
@@ -71,14 +70,7 @@ public class P17142연구소3 {
 				visit[row][col] = true;
 				que.offer(new Point(row,col));
 			}
-			
-				
-			
-			
 		}
-		
-		
-		
 	}
 	
 	public static void main(String[] args) throws IOException {
