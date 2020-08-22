@@ -46,6 +46,7 @@ public class P2573빙산 {
 					cnt++;
 				}
 			}
+			
 			c_map[now.x][now.y] -= zero;
 			if (max < c_map[now.x][now.y]) {
 				max = c_map[now.x][now.y];
