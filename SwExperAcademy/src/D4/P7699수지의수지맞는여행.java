@@ -9,7 +9,7 @@ public class P7699수지의수지맞는여행 {
 	static char map[][];
 	static int R;
 	static int C;
-	static Stack<Character> check = new Stack();
+	static Stack<Character> check = new Stack<Character>();
 	static int dr[] = {1,0,-1,0};
 	static int dc[] = {0,-1,0,1};
 	static int max;
