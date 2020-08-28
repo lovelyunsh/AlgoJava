@@ -11,7 +11,10 @@ import java.io.InputStreamReader;
 //}
 //for(int i = 0 ; i < 5 ; i++) {
 //for(int j = 0 ; j < 5 ; j++) {
-//	System.out.print(visit[i][j] +" ");
+//	if(visit[i][j])
+//		System.out.print("O ");
+//	else
+//		System.out.print("X ");
 //}
 //System.out.println();
 //}

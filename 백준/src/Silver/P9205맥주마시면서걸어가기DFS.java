@@ -47,7 +47,6 @@ public class P9205맥주마시면서걸어가기DFS {
 				break;
 			visit[i] = true;
 			dfs(i);
-			visit[i] = false;
 		}
 		
 		for(int i = now ; i >= 0 ; i--) {
@@ -59,8 +58,6 @@ public class P9205맥주마시면서걸어가기DFS {
 				break;
 			visit[i] = true;
 			dfs(i);
-			visit[i] = false;
-			
 		}
 	}
 
