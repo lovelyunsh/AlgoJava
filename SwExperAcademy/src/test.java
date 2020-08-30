@@ -1,7 +1,11 @@
 
 public class test {
 	public static void main(String[] args) {
-		System.out.println(1<<2 + 1);
+		int start = 1;
+		int end = 2;
+		start = end ^ start^(end = start);
+		System.out.println(start);
+		System.out.println(end);
 	}
 
 }
