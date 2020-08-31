@@ -25,7 +25,5 @@ public class 부분집합 {
 	}
 	public static void main(String[] args) {
 		powerSet(0);
-	}
-	
-	
+	}	
 }
