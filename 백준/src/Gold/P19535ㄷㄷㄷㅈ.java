@@ -28,7 +28,6 @@ public class P19535ㄷㄷㄷㅈ {
 			int end = Integer.parseInt(st.nextToken());
 			list[start].add(end);
 			list[end].add(start);
-			parents[end] = start;
 			lineNum[start]++;
 			lineNum[end]++;
 		}
@@ -53,7 +52,7 @@ public class P19535ㄷㄷㄷㅈ {
 		for(int i = 1 ; i < N+1 ; i++) {
 			long myNum = lineNum[i];
 			long parentNum = lineNum[parents[i]]; 
-			if(myNum >= 3 ) W += myNum*(myNum-1)*(myNum-2)/1/2/3;
+			if(myNum >= 3 ) W += myNum*(myNum-1)*(myNum-2)/1/2/3; //조합이야~~~
 			if(parents[i] != i)E += (myNum-1) * (parentNum -1);
 		}
 		
