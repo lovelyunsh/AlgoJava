@@ -1,11 +1,13 @@
+import java.util.ArrayList;
 
 public class test {
 	public static void main(String[] args) {
-		int start = 300000;
-		int end = 300000;
-		long result = 1L*start*end;
-		System.out.println(result);
-
+		ArrayList<Integer> aaa = new ArrayList<Integer>();
+		aaa.add(1);
+		aaa.add(2);
+		aaa.add(3);
+		aaa.add(4);
+		System.out.println(aaa.indexOf(2));
 	}
 
 }

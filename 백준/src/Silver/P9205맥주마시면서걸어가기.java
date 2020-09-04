@@ -9,7 +9,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-public class P9205맥주마시면서걸어가기BFS {
+public class P9205맥주마시면서걸어가기 {
 	static ArrayList<Point> allnode;
 	static Point fe;
 
