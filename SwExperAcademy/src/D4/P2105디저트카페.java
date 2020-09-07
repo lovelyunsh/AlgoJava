@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class P2105디저트카페 {
+public class P2105디저트카페 {//1
 	static int map[][],N;
 	static int dr[] = {1,1,-1,-1}; 
 	static int dc[] = {1,-1,-1,1};
