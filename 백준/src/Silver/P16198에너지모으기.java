@@ -31,8 +31,7 @@ public class P16198에너지모으기 {
 
         for(int i=1; i<eList.size()-1; i++) {
             int mul = eList.get(i-1)*eList.get(i+1);
-            int energy = eList.get(i);
-            eList.remove(i);
+            int energy = eList.remove(i);
             dfs(sum+mul);
             eList.add(i,energy);
         }

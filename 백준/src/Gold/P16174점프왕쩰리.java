@@ -8,17 +8,18 @@ import java.util.StringTokenizer;
 public class P16174점프왕쩰리 {
 
 	static int map[][];
-	static int dr[] = { -1, 1, 0, 0 };
-	static int dc[] = { 0, 0, -1, 1 };
+	static int dr[] = { 1, 0 };
+	static int dc[] = { 0, 1 };
 	static int N;
 	static boolean visit[][];
+
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		N = Integer.parseInt(br.readLine());
-		map = new int [N][N];
+		map = new int[N][N];
 		visit = new boolean[N][N];
-		
+
 		for (int i = 0; i < N; i++) {
 			StringTokenizer st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < N; j++) {
@@ -31,24 +32,22 @@ public class P16174점프왕쩰리 {
 
 	static void dfs(Point p) {
 		int jump = map[p.x][p.y];
-		if(jump == -1) {
+		if (jump == -1) {
 			System.out.println("HaruHaru");
 			System.exit(0);
 		}
-		
-		
-		for (int i = 0; i < 4; i++) {
-			int row = p.x + dr[i]*jump;
-			int col = p.y + dc[i]*jump;
-			
-			if(row<0 || col < 0 || row>=N || col >= N)
+
+		for (int i = 0; i < 2; i++) {
+			int row = p.x + dr[i] * jump;
+			int col = p.y + dc[i] * jump;
+
+			if (row < 0 || col < 0 || row >= N || col >= N)
 				continue;
-			if(visit[row][col])
+			if (visit[row][col])
 				continue;
-			
-			
+
 			visit[row][col] = true;
-			dfs(new Point(row,col));
+			dfs(new Point(row, col));
 		}
 
 	}
