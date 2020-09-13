@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+	<table>
+		<tr>
+			<td><p>상영관</p></td>
+			<td><select>
+					<option>CGV</option>
+					<option>메가박스</option>
+					<option>롯데시네마</option>
+			</select></td>
+
+			<td><p>날짜 선택</p></td>
+			<td><input type="date" /></td>
+		</tr>
+	</table>
+
+
+
+	<fieldset>
+		<legend>시간 선택</legend>
+		<form>
+			<input name="date" type="radio" onclick="radio()" value="08:30" />08:30 
+			<input name="date" type="radio" onclick="radio()" value="11:00"checked="checked" /> 11:00 
+			<input name="date" type="radio"	onclick="radio()" value="14:20" /> 14:20 
+			<input name="date" type="radio" onclick="radio()" value="17:25" /> 17:25 
+			<input name="date" type="radio" onclick="radio()" value="20:10" /> 20:10 
+			<input name="date" type="radio" onclick="radio()" value="23:05" /> 23:05
+
+		</form>
+	</fieldset>
+	<table>
+		<tr>
+			<td><p>요금</p></td>
+			<td><p id="firstMoney">&#8361;9000</p></td>
+			<td><p id="secondMoney"></p></td>
+		</tr>
+		<tr>
+			<td><p>인원</p></td>
+			<td colspan="2"><input id="head" type="number" value=1
+				onclick="money()" />
+		</tr>
+		<tr>
+			<td><p>금액</p></td>
+			<td colspan="2"><input id="cost" type="number" value=9000
+				disabled="disabled" /></td>
+
+
+		</tr>
+	</table>
+	<input type = "checkbox" name = "combo" value = "123" onclick="comb()">추가
+	<div id="option" style="display: none;">
+         <fieldset>
+            <legend>옵션</legend>
+            <input type="checkbox"> 팝콘 
+            <input type="checkbox"> 콜라
+         </fieldset>
+      </div>
+
+	<script type="text/javascript">
+		var isfive = false;
+		function radio() {
+			var time = $("input:radio[name='date']:checked").val();
+			console.log(time);
+
+			if (time == "08:30") {
+				$("#firstMoney").css("text-decoration", "line-through");
+				$("#secondMoney").text("5000");
+				isfive = true;
+				money();
+			} else {
+				$("#firstMoney").css("text-decoration", "");
+				$("#secondMoney").text("");
+				isfive = false;
+				money();
+
+			}
+		}
+		function comb(){
+			var ischeck = $("input:checkbox[name='combo']").is(":checked");
+			var checkval = $("input:checkbox[name='combo']").val();
+			console.log(checkval);
+			if(ischeck)
+				$("#option").css("display","block");
+			else	
+				$("#option").css("display","none");
+		}
+
+		function money() {
+			var head = $("#head").val();
+			var cost = 0;
+			if (isfive)
+				cost = head * 5000;
+			else
+				cost = head * 9000;
+			console.log(cost);
+			$("#cost").val(cost + "")
+		}
+	</script>
+</body>
+</html>
