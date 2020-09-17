@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="0908_frontweb" path="/0908_frontweb" reloadable="true" source="org.eclipse.jst.jee.server:0908_frontweb"/><Context docBase="hwfront01_Gwangju_02_yunseunghwan" path="/hwfront01_Gwangju_02_yunseunghwan" reloadable="true" source="org.eclipse.jst.jee.server:hwfront01_Gwangju_02_yunseunghwan"/><Context docBase="index" path="/index" reloadable="true" source="org.eclipse.jst.jee.server:index"/><Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="0911WebcodeAcademy" path="/0911WebcodeAcademy" reloadable="true" source="org.eclipse.jst.jee.server:0911WebcodeAcademy"/></Host>
+      <Context docBase="0916_WS" path="/0916_WS" reloadable="true" source="org.eclipse.jst.jee.server:0916_WS"/><Context docBase="213" path="/213" reloadable="true" source="org.eclipse.jst.jee.server:213"/><Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="testwe" path="/testwe" reloadable="true" source="org.eclipse.jst.jee.server:testwe"/><Context docBase="구구단" path="/구구단" reloadable="true" source="org.eclipse.jst.jee.server:구구단"/><Context docBase="guestbookservlet" path="/guestbookservlet" reloadable="true" source="org.eclipse.jst.jee.server:guestbookservlet"/><Context docBase="guestbookjsp" path="/guestbookjsp" reloadable="true" source="org.eclipse.jst.jee.server:guestbookjsp"/></Host>
     </Engine>
   </Service>
 </Server>
