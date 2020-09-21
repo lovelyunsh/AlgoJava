@@ -6,22 +6,22 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
-class Point {
-	int row;
-	int col;
-	int cnt;
-
-	public Point(int row, int col, int cnt) {
-		this.row = row;
-		this.col = col;
-		this.cnt = cnt;
-
-	}
-
-}
 
 public class P7562나이트의이동 {
 
+	static class Point {
+		int row;
+		int col;
+		int cnt;
+		
+		public Point(int row, int col, int cnt) {
+			this.row = row;
+			this.col = col;
+			this.cnt = cnt;
+			
+		}
+		
+	}
 	public static void main(String args[]) throws Exception {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
