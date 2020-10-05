@@ -12,21 +12,16 @@ public class P19953영재의산책 {
 		int v = Integer.parseInt(st.nextToken());
 		int m = Integer.parseInt(st.nextToken());
 		int t = Integer.parseInt(st.nextToken());
-		int arr[] = new int[10];
-
+		int arr[] = new int[5];
 		arr[0] = (v * m) % 10;
-		arr[1] = (arr[0] * m) %10;
-		arr[2] = (arr[1] * m) %10;
-		arr[3] = (arr[2] * m) %10;
-		arr[4] = (arr[3] * m) %10;
-		
+		for(int i = 1 ; i < 5 ; i++)
+			arr[i] = (arr[i-1] * m)%10;
 		long row = 0;
 		long col = 0;
 		row += v;
 		t--;
-		col += arr[1];
+		col += arr[0];
 		t--;
-		
 		int all = t/4;
 		int mod = t%4;
 		row -= 1L * arr[1] * all;
@@ -41,5 +36,4 @@ public class P19953영재의산책 {
 			row+= arr[3];
 		System.out.println(col + " " + row);
 	}
-
 }
