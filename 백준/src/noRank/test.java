@@ -15,7 +15,6 @@ public class test {
 				}
 				if(gop == firstgop)
 					System.out.println(i +" "+ j);
-				
 			}
 		}
 		
