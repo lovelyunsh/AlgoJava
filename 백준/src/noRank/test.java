@@ -2,21 +2,14 @@ package noRank;
 
 public class test {
 	public static void main(String[] args) {
+		int x = 1;
+		int y = 2;
+		x = y ^ x ^ (y = x);
 		
+		x = y + x - ( y = x);
+		System.out.println(x+" "+ y);
 		
-		for(int i = 0 ; i <= 9 ; i++) {
-			for(int j = 0 ; j <= 9 ; j++) {
-				int gop = i*j%10;
-				int firstgop = gop;
-				for(int k = 0 ; k < 4 ; k++) {
-					System.out.print(gop +" ");
-					gop = gop * j % 10;
-					
-				}
-				if(gop == firstgop)
-					System.out.println(i +" "+ j);
-			}
-		}
+
 		
 		
 	}

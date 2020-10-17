@@ -1,5 +1,4 @@
 package Silver;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
@@ -33,8 +32,5 @@ public class P5397키로거 {
 				sb.append(i);
 			System.out.println(sb);
 		}
-		
-		
 	}
-
 }
