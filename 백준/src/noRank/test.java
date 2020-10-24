@@ -2,13 +2,8 @@ package noRank;
 
 public class test {
 	public static void main(String[] args) {
-		int x = 1;
-		int y = 2;
-		x = y ^ x ^ (y = x);
-		
-		x = y + x - ( y = x);
-		System.out.println(x+" "+ y);
-		
+		StringBuilder a = new StringBuilder("012345");
+		System.out.println(a.delete(1, 3).insert(1, "aa"));
 
 		
 		
