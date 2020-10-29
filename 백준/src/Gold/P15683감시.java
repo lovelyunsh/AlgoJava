@@ -96,5 +96,4 @@ public class P15683감시 {
 		}
 		return b;
 	}
-
 }

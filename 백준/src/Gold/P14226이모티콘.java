@@ -16,7 +16,7 @@ public class P14226이모티콘 {
 		Queue<Point> que = new LinkedList<Point>();
 		que.offer(new Point(1, 0)); // x= 현재 개수 y = 클립보드 개수
 		visit[1][0] = true;
-		int cnt = 0;
+		int time = 0;
 		gg:while (!que.isEmpty()) {
 			int size = que.size();
 			for (int i = 0; i < size; i++) {
@@ -37,9 +37,9 @@ public class P14226이모티콘 {
 					que.offer(new Point(now.x+now.y, now.y));
 				}
 			}
-			cnt++;
+			time++;
 		}
-		System.out.println(cnt);
+		System.out.println(time);
 	}
 
 }
