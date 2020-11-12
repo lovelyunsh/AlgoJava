@@ -28,7 +28,6 @@ public class P3691컴퓨터조립 {
 		long quality;
 		String type;
 		public sProduct(long price, long quality, String type) {
-			super();
 			this.price = price;
 			this.quality = quality;
 			this.type = type;
