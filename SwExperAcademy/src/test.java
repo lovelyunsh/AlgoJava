@@ -1,11 +1,11 @@
-import java.util.ArrayList;
+import java.util.HashMap;
 
 public class test {
 	public static void main(String[] args) {
-		int a= 10;
-		int b = 20;
-		a = b ^ a ^(b=a);
-		System.out.println(a+" "+ b);
+		HashMap<int [], Integer> a;
+		String b = null;
+		b.equals("asd");
+		
 	}
 
 }
