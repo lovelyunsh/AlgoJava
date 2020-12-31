@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class G3_P1941소문난칠공주 {
+public class G3_1941소문난칠공주 {
 	static char map[][] = new char[5][5];
 	static int result;
 	static int sel[] = new int [7];
