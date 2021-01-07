@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 import java.util.TreeSet;
 
@@ -27,10 +28,14 @@ public class G4_20440니가싫어싫어너무싫어싫어오지마 {
 			temp.add(e);
 		}
 		ArrayList<Integer> idx = new ArrayList<Integer>(temp);
+		HashMap<Integer, Integer> hashmap = new HashMap<Integer, Integer>();
+		for(int i = 0 ; i < idx.size() ; i++)
+			hashmap.put(idx.get(i), i);
+		
 		int sum[] = new int[idx.size()];
 		for (int i = 0; i < N; i++) {
-			int x = Collections.binarySearch(idx, sarr[i]);
-			int y = Collections.binarySearch(idx, earr[i]);
+			int x = hashmap.get(sarr[i]);
+			int y = hashmap.get(earr[i]);
 			for (int j = x; j < y; j++)
 				sum[j]++;
 		}
