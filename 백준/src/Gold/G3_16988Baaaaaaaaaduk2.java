@@ -67,7 +67,7 @@ public class G3_16988Baaaaaaaaaduk2 {
 					if(arr.size() == 2)
 						return;
 					else
-						arr.add(row*100+col);
+						arr.add(row*1000+col);
 					continue;
 				}
 				if(visit[row][col])
@@ -96,21 +96,21 @@ public class G3_16988Baaaaaaaaaduk2 {
 		int zero1 = candiarr.get(sel[0]);
 		int zero2 = candiarr.get(sel[1]);
 		int cnt = 0;
-		map[zero1/100][zero1%100] = 1;
-		map[zero2/100][zero2%100] = 1;
+		map[zero1/1000][zero1%1000] = 1;
+		map[zero2/1000][zero2%1000] = 1;
 		for(int s = 0 ; s < 2 ; s++) {
 			int zero = candiarr.get(sel[s]);
 			for(int i = 0 ; i < 4 ; i++) {
-				int row = zero/100 + dr[i];
-				int col = zero%100 + dc[i];
+				int row = zero/1000 + dr[i];
+				int col = zero%1000 + dc[i];
 				if(row < 0 || col <0 || row>= N || col >= M || visit[row][col])
 					continue;
 				if(map[row][col] == 2) 
 					cnt += bfs(row,col);
 			}
 		}
-		map[zero1/100][zero1%100] = 0;
-		map[zero2/100][zero2%100] = 0;
+		map[zero1/1000][zero1%1000] = 0;
+		map[zero2/1000][zero2%1000] = 0;
 		return cnt;
 	}
 	static int bfs(int x, int y) {
