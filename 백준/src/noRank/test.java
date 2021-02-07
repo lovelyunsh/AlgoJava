@@ -1,11 +1,38 @@
 package noRank;
 
-public class test {
+import java.util.PriorityQueue;
 
+public class test {
+	static int num = -1;
+	static class ab implements Comparable<ab>{
+		int a;
+		
+		@Override
+		public int compareTo(ab o) {
+			// TODO Auto-generated method stub
+			return num*this.a - num*o.a;
+		}
+
+		public ab(int a) {
+			this.a = a;
+		}
+		
+	}
+	
 	public static void main(String[] args) {
-		String S = "{ \"class\": \"GraphLinksModel\",\n  \"linkFromPortIdProperty\": \"fromPort\",\n  \"linkToPortIdProperty\": \"toPort\",\n  \"nodeDataArray\": [ \n{\"text\":\"알고리즘 심화\", \"key\":-2, \"loc\":\"-217.5 -255.21875\"},\n{\"text\":\"알고리즘 심화\", \"key\":-3, \"loc\":\"-216 -53.21875\"},\n{\"text\":\"알고리즘 심화\", \"key\":-4, \"loc\":\"-179.5 93.78125\"},\n{\"text\":\"알고리즘 심화\", \"key\":-5, \"loc\":\"-345 205.78125\"}\n ],\n  \"linkDataArray\": [ \n{\"from\":-2, \"to\":-3, \"fromPort\":\"B\", \"toPort\":\"T\", \"points\":[-217.49999999999997,-234.7696019466468,-217.49999999999997,-224.7696019466468,-217.49999999999997,-154.21875,-215.99999999999997,-154.21875,-215.99999999999997,-83.66789805335318,-215.99999999999997,-73.66789805335318]},\n{\"from\":-3, \"to\":-4, \"fromPort\":\"B\", \"toPort\":\"T\", \"points\":[-215.99999999999997,-32.769601946646816,-215.99999999999997,-22.769601946646816,-215.99999999999997,20.28125,-179.5,20.28125,-179.5,63.332101946646816,-179.5,73.33210194664682]},\n{\"from\":-4, \"to\":-5, \"fromPort\":\"B\", \"toPort\":\"R\", \"points\":[-179.5,114.23039805335318,-179.5,124.23039805335318,-179.5,205.78125,-227.9860521940265,205.78125,-276.472104388053,205.78125,-286.472104388053,205.78125]}\n ]}";
-		String b = S.replace("\n", "");
-		System.out.println(b);
+		PriorityQueue<ab> cc = new PriorityQueue<test.ab>();
+		cc.add(new ab(1));
+		cc.add(new ab(2));
+		cc.add(new ab(3));
+		cc.add(new ab(4));
+		cc.add(new ab(5));
+		
+		System.out.println(cc.poll().a);
+		num = 1;
+		cc.add(new ab(-1));
+		System.out.println(cc.poll().a);
+		System.out.println(cc.poll().a);
+		System.out.println(cc.poll().a);
 		
 	}
 
