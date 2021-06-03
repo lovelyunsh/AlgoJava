@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/백준/silver/test.py" line="14" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6326ac42-4d09-4c4c-9ab4-3f17a79437f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/백준/silver/S1_16918봄버맨.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/something/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/something/tf.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/gold/G2_14725개미굴.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/silver/S1_2447별찍기-10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/silver/S4_2847게임을만든동준이.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/silver/S5_17478재귀함수가뭔가요.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/백준/silver/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SwExperAcademy/bin/D4/P7285혁진이의프로그램검증.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SwExperAcademy/bin/D4/P7285혁진이의프로그램검증.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,29 +25,34 @@
     <session id="-1024621384">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1580" />
+          <entry key="py" value="4771" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1580" />
+          <entry key="Python" value="4771" />
         </counts>
       </usages-collector>
     </session>
@@ -47,12 +61,74 @@
     <favorites_list name="python" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/백준/silver/S1_16918봄버맨.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="252">
               <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/백준/silver/S5_17478재귀함수가뭔가요.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <marker date="1614177357787" expanded="true" signature="455:460" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/백준/silver/S1_2447별찍기-10.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <marker date="1614180708774" expanded="true" signature="133:444" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/백준/gold/G2_14725개미굴.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <marker date="1614344930381" expanded="true" signature="261:266" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/백준/silver/S4_2847게임을만든동준이.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/백준/silver/test.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/something/tf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3319">
+              <caret line="352" column="55" lean-forward="true" selection-start-line="352" selection-start-column="55" selection-end-line="352" selection-end-column="55" />
+              <folding>
+                <element signature="e#332#341#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,14 +149,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/백준/silver/S1_16918봄버맨.py" />
+        <option value="$PROJECT_DIR$/백준/silver/S5_17478재귀함수가뭔가요.py" />
+        <option value="$PROJECT_DIR$/백준/silver/S1_2447별찍기-10.py" />
+        <option value="$PROJECT_DIR$/백준/gold/G2_14725개미굴.py" />
+        <option value="$PROJECT_DIR$/백준/silver/S4_2847게임을만든동준이.py" />
+        <option value="$PROJECT_DIR$/백준/silver/test.py" />
+        <option value="$PROJECT_DIR$/something/tf.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="14" />
-    <option name="y" value="159" />
-    <option name="width" value="1940" />
-    <option name="height" value="1159" />
+    <option name="x" value="-7" />
+    <option name="width" value="1932" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,7 +180,7 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="백준" type="462c0819:PsiDirectoryNode" />
+              <item name="something" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -108,7 +189,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="last_opened_file_path" value="C:/Documents and Settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -122,8 +204,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="S1_16918봄버맨" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.test">
+    <configuration name="G2_14725개미굴" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/gold" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/gold/G2_14725개미굴.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="S1_2447별찍기-10" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -135,7 +238,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/silver/S1_16918봄버맨.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/silver/S1_2447별찍기-10.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,9 +247,83 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="S4_2847게임을만든동준이" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/silver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/silver/S4_2847게임을만든동준이.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="S5_17478재귀함수가뭔가요" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/silver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/silver/S5_17478재귀함수가뭔가요.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/백준/silver" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/백준/silver/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.S5_17478재귀함수가뭔가요" />
+      <item itemvalue="Python.S1_2447별찍기-10" />
+      <item itemvalue="Python.G2_14725개미굴" />
+      <item itemvalue="Python.S4_2847게임을만든동준이" />
+      <item itemvalue="Python.test" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.S1_16918봄버맨" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.S4_2847게임을만든동준이" />
+        <item itemvalue="Python.G2_14725개미굴" />
+        <item itemvalue="Python.S1_2447별찍기-10" />
+        <item itemvalue="Python.S5_17478재귀함수가뭔가요" />
       </list>
     </recent_temporary>
   </component>
@@ -173,22 +350,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="14" y="159" width="1940" height="1159" extended-state="0" />
+    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
     <layout>
-      <window_info id="Favorites" sideWeight="0.5008" side_tool="true" weight="0.24973656" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.13512093" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992" visible="true" weight="0.13569166" />
       <window_info id="Structure" order="1" sideWeight="0.5008" side_tool="true" weight="0.24973656" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32949087" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32949087" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" sideWeight="0.5008" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33496094" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4062176" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39961576" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949087" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32894737" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32949087" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -200,8 +377,58 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/백준/silver/S1_16918봄버맨.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="252">
           <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/백준/silver/S5_17478재귀함수가뭔가요.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <marker date="1614177357787" expanded="true" signature="455:460" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/백준/silver/S1_2447별찍기-10.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <marker date="1614180708774" expanded="true" signature="133:444" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/백준/gold/G2_14725개미굴.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <marker date="1614344930381" expanded="true" signature="261:266" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/백준/silver/S4_2847게임을만든동준이.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/백준/silver/test.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/something/tf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3319">
+          <caret line="352" column="55" lean-forward="true" selection-start-line="352" selection-start-column="55" selection-end-line="352" selection-end-column="55" />
+          <folding>
+            <element signature="e#332#341#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
