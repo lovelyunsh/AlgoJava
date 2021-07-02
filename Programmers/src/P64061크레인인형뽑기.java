@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class 크레인인형뽑기 {
+public class P64061크레인인형뽑기 {
 	
 	public int solution(int[][] board, int[] moves) {
 		int answer = 0;
@@ -31,6 +31,4 @@ public class 크레인인형뽑기 {
 		return num;
 	}
 }
-
-
 

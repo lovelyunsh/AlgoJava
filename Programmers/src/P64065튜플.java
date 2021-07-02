@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
-public class 튜플 {
+public class P64065튜플 {
 	// 1 + 2 + 3 + ... + n;
 	
 	public int[] solution(String s) {

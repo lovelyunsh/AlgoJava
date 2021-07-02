@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class 불량사용자 {
+public class P64064불량사용자 {
 	//순열뽑기
 	//banned_id랑 비교
 	//통과하면 set에 넣기
@@ -54,3 +54,5 @@ public class 불량사용자 {
 		return true;
 	}
 }
+
+

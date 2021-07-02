@@ -1,5 +1,5 @@
 
-public class 징검다리건너기 {
+public class P64062징검다리건너기 {
 	
 	
 	public int solution(int[] stones, int k) {
@@ -15,3 +15,4 @@ public class 징검다리건너기 {
 		return min;
 	}
 }
+
