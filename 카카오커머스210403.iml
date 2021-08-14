@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/카카오커머스210403/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/카카오커머스210403">
+      <sourceFolder url="file://$MODULE_DIR$/카카오커머스210403/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="zulu8.48.0.49-ca-jdk8.0.262-win_x64" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
